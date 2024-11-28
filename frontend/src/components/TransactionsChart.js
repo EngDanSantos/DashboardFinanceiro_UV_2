@@ -21,7 +21,7 @@ ChartJS.register(
 );
 
 const TransactionsChart = ({ transactions }) => {
-    const categories = ['Income', 'Expense'];
+    const categories = ['Receita', 'Despesa'];
     const dataByCategory = categories.map((category) =>
         transactions
             .filter((transaction) => transaction.category.toLowerCase() === category.toLowerCase())

@@ -39,7 +39,7 @@ const Dashboard = () => {
                 </Button>
             </div>
 
-            <Grid container spacing={2} style={{ marginTop: 20 }}>
+            <Grid container spacing={2} style={{ marginTop: 10 }}>
                 <Grid item xs={12} md={6}>
                     <AddTransactionForm onAdd={handleAddTransaction} />
                 </Grid>

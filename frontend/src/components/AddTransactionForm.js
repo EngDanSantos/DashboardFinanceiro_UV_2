@@ -32,7 +32,7 @@ const AddTransactionForm = ({ onAdd }) => {
             <input name="date" type="date" value={formData.date} onChange={handleChange} />
             <select name="category" value={formData.category} onChange={handleChange}>
                 <option value="receita">Receita</option>
-                <option value="expense">Despesa</option>
+                <option value="despesa">Despesa</option>
             </select>            
             <button type="submit">Adiciona Transação</button>
         </form>

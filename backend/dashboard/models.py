@@ -11,7 +11,7 @@ class Vendas(models.Model):
 class Transaction(models.Model):
     CATEGORY_CHOICES = [
         ('receita', 'Receita'),
-        ('expense', 'Expense'),
+        ('despesa', 'Despesa'),
     ]
 
     title = models.CharField(max_length=100)

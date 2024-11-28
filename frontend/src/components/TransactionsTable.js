@@ -9,7 +9,7 @@ const TransactionsTable = ({ transactions }) => {
                     <TableRow>
                         <TableCell><b>Título</b></TableCell>
                         <TableCell><b>Categoria</b></TableCell>
-                        <TableCell><b>Quantidade</b></TableCell>
+                        <TableCell><b>Quantia</b></TableCell>
                         <TableCell><b>Data</b></TableCell>
                     </TableRow>
                 </TableHead>

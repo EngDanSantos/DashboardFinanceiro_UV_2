@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import api from '../services/api';
+import './form.css';
 
 const AddTransactionForm = ({ onAdd }) => {
     const [formData, setFormData] = useState({
@@ -25,14 +26,14 @@ const AddTransactionForm = ({ onAdd }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input name="title" placeholder="Title" value={formData.title} onChange={handleChange} />
+        <form onSubmit={handleSubmit} style={{ marginTop: 20}}>
+            <input name="title" placeholder="Descrição" value={formData.title} onChange={handleChange} />
+            <input name="amount" placeholder="Quantia" value={formData.amount} onChange={handleChange} />
+            <input name="date" type="date" value={formData.date} onChange={handleChange} />
             <select name="category" value={formData.category} onChange={handleChange}>
                 <option value="receita">Receita</option>
                 <option value="expense">Despesa</option>
-            </select>
-            <input name="amount" placeholder="Amount" value={formData.amount} onChange={handleChange} />
-            <input name="date" type="date" value={formData.date} onChange={handleChange} />
+            </select>            
             <button type="submit">Adiciona Transação</button>
         </form>
     );

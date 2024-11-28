@@ -1,0 +1,16 @@
+form{
+   
+    display:table;
+    
+}
+
+button{
+    background-color: rgb(103, 254, 254);
+    align-items: center;
+    border-radius: 20px;
+}
+
+select{
+    background-color: rgb(156, 243, 243);
+    border-radius: 10px;
+}

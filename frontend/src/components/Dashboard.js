@@ -4,7 +4,9 @@ import TransactionsTable from './TransactionsTable';
 import AddTransactionForm from './AddTransactionForm';
 import TransactionsChart from './TransactionsChart';
 import api from '../services/api';
-import { Container, Typography, Grid, Button } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import { Container, Typography, Button } from '@mui/material';
+
 
 const Dashboard = () => {
     const [transactions, setTransactions] = useState([]);
@@ -21,7 +23,7 @@ const Dashboard = () => {
 
     return (
         <Container>
-            <Typography variant="h3" style={{ marginTop: 20, textAlign: 'center'}}>
+            <Typography variant="h3" style={{ marginTop: 20, textAlign: 'center',}}>
                 Dashboard Financeiro
             </Typography>
 
